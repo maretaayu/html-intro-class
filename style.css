@@ -1,0 +1,42 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+.hero {
+  display: grid;
+}
+.card {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 32px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    gap: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+}
